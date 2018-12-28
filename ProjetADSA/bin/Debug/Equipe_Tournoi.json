@@ -1,0 +1,368 @@
+[
+  {
+    "name":"Paris Saint Germain",
+    "attack": 90,
+    "defense" : 85,
+    "teamCohesion" : 84,
+	  "coefficient" :  101,
+	  "country" : "France"
+
+  },
+  {
+    "name":"Bayern FC",
+    "attack": 88,
+    "defense" : 86,
+    "teamCohesion" : 80,
+	  "coefficient" :  127,
+  	"country" : "Germany"
+
+  },
+  {
+    "name":"PSV",
+    "attack": 70,
+    "defense" : 71,
+    "teamCohesion" : 80,
+  	"coefficient" :  37 ,
+  	"country" : "Netherland"
+
+  },
+  {
+    "name":"Lyon",
+    "attack": 75,
+    "defense" : 74,
+    "teamCohesion" : 80,
+	  "coefficient" :  60,
+	  "country" : "France"
+
+  },
+  {
+    "name":"Ajax",
+    "attack": 71,
+    "defense" : 78,
+    "teamCohesion" : 80,
+  	"coefficient" :  61 ,
+	  "country" : "Netherland"
+
+  },
+    {
+    "name":"Inter Milan",
+    "attack": 76,
+    "defense" : 80,
+    "teamCohesion" : 80,
+	"coefficient" :  26,
+	"country" : "Italy"
+
+  },
+    {
+    "name":"Manchester United",
+    "attack": 87,
+    "defense" : 85,
+    "teamCohesion" : 83,
+	"coefficient" :  75 ,
+	"country" : "United Kingdom"
+
+  },
+    {
+    "name":"Galatasaray",
+    "attack": 73,
+    "defense" : 76,
+    "teamCohesion" : 80,
+	"coefficient" :  21 ,
+	"country" : "Turkey"
+
+  },
+    {
+    "name":"Atletico Madrid",
+    "attack": 88,
+    "defense" : 87,
+    "teamCohesion" : 88,
+	"coefficient" :  125 ,
+	"country" : "Spain"
+
+  },
+    {
+    "name":"Basel",
+    "attack": 69,
+    "defense" : 72,
+    "teamCohesion" : 80,
+	"coefficient" :  54,
+	"country" : "Switzerland"
+
+  },
+    {
+    "name":"Juventus",
+    "attack": 94,
+    "defense" : 88,
+    "teamCohesion" : 90,
+	"coefficient" :  120 ,
+	"country" : "Italy"
+
+  },
+    {
+    "name":"FC Barcelona",
+    "attack": 90,
+    "defense" : 89,
+    "teamCohesion" : 87,
+	"coefficient" :  127,
+	"country" : "Spain"
+	
+
+  },
+    {
+    "name":"AS Monaco",
+    "attack": 68,
+    "defense" : 69,
+    "teamCohesion" : 74,
+	"coefficient" : 62 ,
+	"country" : "France"
+
+  },
+    {
+    "name":"Tottenham",
+    "attack": 90,
+    "defense" : 78,
+    "teamCohesion" : 85,
+	"coefficient" :  67 ,
+	"country" : "United Kingdom"
+
+  },
+    {
+    "name":"Borussia Dortmund",
+    "attack": 79,
+    "defense" : 78,
+    "teamCohesion" : 80,
+	"coefficient" :  85 ,
+	"country" : "Germany"
+
+  },
+    {
+    "name":"Porto",
+    "attack": 76,
+    "defense" : 80,
+    "teamCohesion" : 80,
+	"coefficient" :  90 ,
+	"country" : "Portugal"
+
+  },
+    {
+    "name":"AS Roma",
+    "attack": 81,
+    "defense" : 79,
+    "teamCohesion" : 79,
+	"coefficient" :  79,
+	"country" : "Italy"
+  },
+    {
+    "name":"Milan AC",
+    "attack": 72,
+    "defense" : 78,
+    "teamCohesion" : 75,
+	"coefficient" :  19 ,
+	"country" : "Italy"
+
+  },
+    {
+    "name":"Manchester City",
+    "attack": 88,
+    "defense" : 88,
+    "teamCohesion" : 87,
+	"coefficient" :  99 ,
+	"country" : "United Kingdom"
+
+  },
+    {
+    "name":"Real Madrid",
+    "attack": 87,
+    "defense" : 88,
+    "teamCohesion" : 90,
+	"coefficient" : 144,
+	"country" : "Spain"	
+  },
+    {
+    "name":"CSKA Moskva",
+    "attack": 75,
+    "defense" : 71,
+    "teamCohesion" : 70,
+	"coefficient" :  48 ,
+    "country" : "Russia"	
+  },
+    {
+    "name":"Club Brugge",
+    "attack": 70,
+    "defense" : 72,
+    "teamCohesion" : 80,
+	"coefficient" :  37 ,
+	"country" : "Belgium"	
+
+  },
+    {
+    "name":"SC Napoli",
+    "attack": 80,
+    "defense" : 80,
+    "teamCohesion" : 80,
+	"coefficient" :  73 ,
+    "country" : "Italy"	
+  },
+    {
+    "name":"Schalke 04",
+    "attack": 78,
+    "defense" : 80,
+    "teamCohesion" : 81,
+	"coefficient" :  63 ,
+    "country" : "Germany"	
+
+  },
+    {
+    "name":"Valence CF",
+    "attack": 81,
+    "defense" : 79,
+    "teamCohesion" : 80,
+	"coefficient" : 24 ,
+    "country" : "Spain"	
+
+  },
+    {
+    "name":"Everton",
+    "attack": 76,
+    "defense" : 78,
+    "teamCohesion" : 80,
+	"coefficient" :  17 ,
+    "country" : "United Kingdom"	
+
+  },
+    {
+    "name":"BSC Young Boys",
+    "attack": 70,
+    "defense" : 73,
+    "teamCohesion" : 79,
+	"coefficient" :  27 ,
+    "country" : "Switzerland"	
+
+  },
+    {
+    "name":"Sevilla",
+    "attack": 80,
+    "defense" : 77,
+    "teamCohesion" : 83,
+	"coefficient" :  99 ,
+    "country" : "Spain"	
+
+  },
+    {
+    "name":"Celtics Glasgow",
+    "attack": 71,
+    "defense" : 74,
+    "teamCohesion" : 72,
+	"coefficient" :  31 ,
+    "country" : "Ecosse"	
+
+  },
+    {
+    "name":"Dinamo Zagreb",
+    "attack": 70,
+    "defense" : 71,
+    "teamCohesion" : 71,
+	"coefficient" :  25 ,
+    "country" : "Croatia"	
+
+  },
+    {
+    "name":"Spartak Moscow",
+    "attack": 73,
+    "defense" : 72,
+    "teamCohesion" : 71,
+	"coefficient" :  16 ,
+    "country" : "Russia"	
+
+  },
+    {
+    "name":"Fernerbahce",
+    "attack": 74,
+    "defense" : 72,
+    "teamCohesion" : 73,
+	"coefficient" :  29 ,
+    "country" : "Turkey"	
+
+  },
+    {
+    "name":"Gent",
+    "attack": 70,
+    "defense" : 70,
+    "teamCohesion" : 73,
+	"coefficient" :  29 ,
+    "country" : "Belgium"	
+
+  },
+    {
+    "name":"Salzbourg",
+    "attack": 75,
+    "defense" : 74,
+    "teamCohesion" : 80,
+	"coefficient" :  50 ,
+    "country" : "Austria"	
+
+  },
+    {
+    "name":"Benifica",
+    "attack": 76,
+    "defense" : 75,
+    "teamCohesion" : 83,
+	"coefficient" :  60 ,
+    "country" : "Portugal"	
+
+  },
+    {
+    "name":"Sporting CP",
+    "attack": 77,
+    "defense" : 76,
+    "teamCohesion" : 78,
+	"coefficient" : 49 ,
+    "country" : "Portugal"	
+
+  },
+    {
+    "name":"Shakhtar Donetsk",
+    "attack": 80,
+    "defense" : 76,
+    "teamCohesion" : 80,
+	"coefficient" :  79 ,
+    "country" : "Ukraine"	
+
+  },
+    {
+    "name":"Locomotiv Moscow",
+    "attack": 73,
+    "defense" : 74,
+    "teamCohesion" : 71,
+	"coefficient" :  28 ,
+    "country" : "Russia"	
+
+  },
+    {
+    "name":"Lazio Rome",
+    "attack": 81,
+    "defense" : 82,
+    "teamCohesion" : 80,
+	"coefficient" :  37 ,
+    "country" : "Italy"	
+
+  },
+    {
+    "name":"Hoffenheim",
+    "attack": 77,
+    "defense" : 76,
+    "teamCohesion" : 77,
+	"coefficient" :  14 ,
+    "country" : "Germany"	
+
+  },
+    {
+    "name":"Olympique Marseille",
+    "attack": 76,
+    "defense" : 77,
+    "teamCohesion" : 80,
+	"coefficient" :  29 ,
+    "country" : "France"	
+
+  }
+]

@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjetADSA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="648.135" Width="1056.903">
+
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Matthieu SCHOESER" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
+        <Label Content="Xavier SY" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center"/>
+        <Label Content="Emin YALAZ" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center"/>
+        <Label Content="Projet ADSA" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24"/>
+        <Button Grid.ColumnSpan="2" Content="Manual" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="75" Height="30" Name="manualButton" Click="manualButton_Click"/>
+        <Button Grid.ColumnSpan="2" Content="Random" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="75" Height="30" Name="randomButton" Click="randomButton_Click"/>
+
+        <Frame HorizontalAlignment="Left" Height="618" VerticalAlignment="Top" Width="1050" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="main"/>
+        <Label Name="test" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="608" Grid.RowSpan="3" Width="1030"/>
+
     </Grid>
 </Window>
