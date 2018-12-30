@@ -23,3 +23,8 @@ C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\obj\Debug\rankPage.g.cs
 C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\obj\Debug\rankPage.baml
 C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\obj\Debug\manualPage.g.cs
 C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\obj\Debug\manualPage.baml
+C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\bin\Debug\MaterialDesignColors.dll
+C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\eminy\source\repos\ProjetADSA\ProjetADSA\obj\Debug\App.baml

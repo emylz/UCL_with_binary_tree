@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.0.0.14576, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.1\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.5.0.1205, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.5.0.1205\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -126,6 +132,90 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pictures\ACMilan_logo.png" />
+    <Resource Include="pictures\ACMilan_logo_1.png" />
+    <Resource Include="pictures\Ajax_logo.png" />
+    <Resource Include="pictures\Ajax_logo_1.png" />
+    <Resource Include="pictures\ASMonaco_logo.png" />
+    <Resource Include="pictures\ASMonaco_logo_1.png" />
+    <Resource Include="pictures\ASRoma_logo.png" />
+    <Resource Include="pictures\ASRoma_logo_1.png" />
+    <Resource Include="pictures\AtleticoMadrid_logo.png" />
+    <Resource Include="pictures\AtleticoMadrid_logo_1.png" />
+    <Resource Include="pictures\Benfica_logo.png" />
+    <Resource Include="pictures\Benfica_logo_1.png" />
+    <Resource Include="pictures\BSCYoungBoys_logo.png" />
+    <Resource Include="pictures\BSCYoungBoys_logo_1.png" />
+    <Resource Include="pictures\CelticsGlasgow_logo.png" />
+    <Resource Include="pictures\CelticsGlasgow_logo_1.png" />
+    <Resource Include="pictures\ClubBrugge_logo.png" />
+    <Resource Include="pictures\ClubBrugge_logo_1.png" />
+    <Resource Include="pictures\CSKA_logo.png" />
+    <Resource Include="pictures\CSKA_logo_1.png" />
+    <Resource Include="pictures\DinamoZagreb_logo.png" />
+    <Resource Include="pictures\DinamoZagreb_logo_1.png" />
+    <Resource Include="pictures\Dortmund_logo.png" />
+    <Resource Include="pictures\Dortmund_logo_1.png" />
+    <Resource Include="pictures\Everton_logo.png" />
+    <Resource Include="pictures\Everton_logo_1.png" />
+    <Resource Include="pictures\FCBarcelone_logo.png" />
+    <Resource Include="pictures\FCBarcelone_logo_1.png" />
+    <Resource Include="pictures\FCBasel_logo.png" />
+    <Resource Include="pictures\FCBasel_logo_1.png" />
+    <Resource Include="pictures\FCBayern_logo.png" />
+    <Resource Include="pictures\FCBayern_logo_1.png" />
+    <Resource Include="pictures\Fenerbahce_logo.png" />
+    <Resource Include="pictures\Fenerbahce_logo_1.png" />
+    <Resource Include="pictures\Galatasaray_logo.png" />
+    <Resource Include="pictures\Galatasaray_logo_1.png" />
+    <Resource Include="pictures\Gent_logo.png" />
+    <Resource Include="pictures\Gent_logo_1.png" />
+    <Resource Include="pictures\Hoffenheim_logo.png" />
+    <Resource Include="pictures\Hoffenheim_logo_1.png" />
+    <Resource Include="pictures\InterMilan_logo.png" />
+    <Resource Include="pictures\InterMilan_logo_1.png" />
+    <Resource Include="pictures\Juventus_logo.png" />
+    <Resource Include="pictures\Juventus_logo_1.png" />
+    <Resource Include="pictures\Lazio_logo.png" />
+    <Resource Include="pictures\Lazio_logo_1.png" />
+    <Resource Include="pictures\LokomotivMoscow_logo.png" />
+    <Resource Include="pictures\LokomotivMoscow_logo_1.png" />
+    <Resource Include="pictures\ManchesterCity_logo.png" />
+    <Resource Include="pictures\ManchesterCity_logo_1.png" />
+    <Resource Include="pictures\MU_logo.png" />
+    <Resource Include="pictures\MU_logo_1.png" />
+    <Resource Include="pictures\Napoli_logo.png" />
+    <Resource Include="pictures\Napoli_logo_1.png" />
+    <Resource Include="pictures\OL_logo.png" />
+    <Resource Include="pictures\OL_logo_1.png" />
+    <Resource Include="pictures\OM_logo.png" />
+    <Resource Include="pictures\OM_logo_1.png" />
+    <Resource Include="pictures\Porto_logo.png" />
+    <Resource Include="pictures\Porto_logo_1.png" />
+    <Resource Include="pictures\PSG_logo.png" />
+    <Resource Include="pictures\PSG_logo_1.png" />
+    <Resource Include="pictures\PSV_logo.png" />
+    <Resource Include="pictures\PSV_logo_1.png" />
+    <Resource Include="pictures\RealMadrid_logo.png" />
+    <Resource Include="pictures\Salzburg_logo.png" />
+    <Resource Include="pictures\Salzburg_logo_1.png" />
+    <Resource Include="pictures\Schalke04_logo.png" />
+    <Resource Include="pictures\Schalke04_logo_1.png" />
+    <Resource Include="pictures\Sevilla_logo.png" />
+    <Resource Include="pictures\Sevilla_logo_1.png" />
+    <Resource Include="pictures\ShakhtarDonetsk_logo.png" />
+    <Resource Include="pictures\ShakhtarDonetsk_logo_1.png" />
+    <Resource Include="pictures\SpartakMoscow_logo.png" />
+    <Resource Include="pictures\SpartakMoscow_logo_1.png" />
+    <Resource Include="pictures\Sporting_logo.png" />
+    <Resource Include="pictures\Sporting_logo_1.png" />
+    <Resource Include="pictures\Tottenham_logo.png" />
+    <Resource Include="pictures\Tottenham_logo_1.png" />
+    <Resource Include="pictures\Trophy.png" />
+    <Resource Include="pictures\ValenciaCF_logo.png" />
+    <Resource Include="pictures\ValenciaCF_logo_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetADSA
 {
-    class Team : IComparable<Team>
+    public class Team : IComparable<Team>
     {
         string name;
 
@@ -38,15 +38,6 @@ namespace ProjetADSA
             int mean = this.attack + this.defense + this.teamCohesion;
             this.overall = mean / 3;
             this.country = country;
-            if(this.name.Length < 15)
-            {
-                int i = this.name.Length;
-                while(i < 20)
-                {
-                    this.name += " ";
-                    i++;
-                }
-            }
         }
 
         public int Attack { get => attack; set => attack = value; }
@@ -96,28 +87,29 @@ namespace ProjetADSA
 
         public int CompareTo(Team t)
         {
-            return -1 * this.pointNumber.CompareTo(t.pointNumber);
+            int compPts = -1 * this.pointNumber.CompareTo(t.pointNumber);
+            if (compPts == 0)
+            {
+                int compAvg = -1 * this.avg.CompareTo(t.avg);
+                if (compAvg == 0)
+                {
+                    return -1 * this.attack.CompareTo(t.attack);
+                }
+                return compAvg;
+            }
+
+            return compPts;
         }
 
         static public int CoefficientSort(Team t1, Team t2)
         {
             return -1 * t1.coefficient.CompareTo(t2.coefficient);
         }
-
-        static public int avgSort(Team t1, Team t2)
-        {
-            return -1 * t1.avg.CompareTo(t2.avg);
-        }
-
-        static public int attSort(Team t1, Team t2)
-        {
-            return -1 * t1.attack.CompareTo(t2.attack);
-        }
-
+        
         public override string ToString()
         {
-            return this.Name + " Pts: " + this.PointNumber + " P: " + this.Played + " W: " + this.VictoryNumber + " D: " + this.DrawNumber + " L: " + this.DefeatNumber +
-                 " Avg: " + this.Avg;
+            return this.Name + " => Pts: " + this.PointNumber + " P: " + this.Played + " W: " + this.VictoryNumber + " D: " + this.DrawNumber + " L: " + this.DefeatNumber +
+                " Sco: " + this.scored + " Conc " + this.Conceded + " Avg: " + this.Avg;
         }
 
     }

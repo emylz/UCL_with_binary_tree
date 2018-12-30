@@ -5,12 +5,15 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProjetADSA"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1450" d:DesignWidth="1800"
       Title="manualPage">
 
-    <Grid Background="#FFE2CACA">
-        <Grid HorizontalAlignment="Left" Height="100" Margin="10,240,0,0" VerticalAlignment="Top" Width="505"/>
-        <Grid HorizontalAlignment="Left" Height="225" Margin="135,115,0,0" VerticalAlignment="Top" Width="505">
+    <Grid Background="#FF333471">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="450"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid Height="450" Width="1052">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -28,173 +31,621 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="0" Grid.Row="0">
 
+            <Grid Grid.Column="0">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/PSG_logo.png"  Width="80" Height="80"/>
+                    <TextBlock Text="PSG" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectPSG" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0." />
             </Grid>
-            <Button Grid.Column="0" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="1" Grid.Row="0">
+            <Button Name="btnPSG" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}" Click="btnPSG_Click"/>
 
+            <Grid Grid.Column="1">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/FCBayern_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="FC BAYERN" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectBayern" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="1" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="2" Grid.Row="0">
+            <Button Name="btnBayern" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}" Click="btnBayern_Click"/>
 
+            <Grid Grid.Column="2">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/PSV_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="PSV" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectPSV" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="2" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="3" Grid.Row="0">
+            <Button Name="btnPSV" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}" Click="btnPSV_Click"/>
 
+            <Grid Grid.Column="3">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/OL_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="OL" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectOL" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="3" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="4" Grid.Row="0">
+            <Button Name="btnOL" Click="btnOL_Click" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
+            <Grid Grid.Column="4">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Ajax_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Ajax" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectAjax" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="4" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="5" Grid.Row="0">
+            <Button Name="btnAjax" Click="btnAjax_Click" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
+            <Grid Grid.Column="5">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/InterMilan_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Inter Milan" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectInterMilan" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="5" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="6" Grid.Row="0">
+            <Button Name="btnInterMilan" Click="btnInterMilan_Click" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
+            <Grid Grid.Column="6">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/MU_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Manchester" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectMU" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="6" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="7" Grid.Row="0">
+            <Button Name="btnMU" Click="btnMU_Click" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
+            <Grid Grid.Column="7">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Galatasaray_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Galatasaray" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectGala" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="7" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="8" Grid.Row="0">
+            <Button Name="btnGala" Click="btnGala_Click" Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
+            <Grid Grid.Column="8">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/AtleticoMadrid_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Atletico" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectAtletico" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="8" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="9" Grid.Row="0">
+            <Button Name="btnAtletico" Click="btnAtletico_Click" Grid.Column="8" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
+            <Grid Grid.Column="9">
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/FCBasel_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="FC Basel" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectBasel" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="9" Grid.Row="0" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnBasel" Click="btnBasel_Click" Grid.Column="9" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="0" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Juventus_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Juventus" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectJuve" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="0" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnJuve" Click="btnJuve_Click" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="1" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/FCBarcelone_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="FC Barcelone" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectFCB" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="1" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnFCB" Click="btnFCB_Click" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="2" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ASMonaco_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="AS Monaco" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectMonaco" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="2" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnMonaco" Click="btnMonaco_Click" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="3" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Tottenham_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Tottenham" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectTottenham" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="3" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnTottenham" Click="btnTottenham_Click" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="4" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Dortmund_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Dortmund" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectDortmund" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="4" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnDortmund" Click="btnDortmund_Click" Grid.Column="4" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="5" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Porto_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Porto" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectPorto" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="5" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnPorto" Click="btnPorto_Click" Grid.Column="5" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="6" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ASRoma_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="AS Roma" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectRoma" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="6" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnRoma" Click="btnRoma_Click" Grid.Column="6" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="7" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ACMilan_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Milan AC" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectACMilan" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="7" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnACMilan" Click="btnACMilan_Click" Grid.Column="7" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="8" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ManchesterCity_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Manchester" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectMC" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="8" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnMC" Click="btnMC_Click" Grid.Column="8" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="9" Grid.Row="1">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/RealMadrid_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Real Madrid" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectReal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="9" Grid.Row="1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnReal" Click="btnReal_Click" Grid.Column="9" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="0" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/CSKA_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="CSKA Moskva" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectCSKA" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="0" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnCSKA" Click="btnCSKA_Click" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="1" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ClubBrugge_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Club Brugge" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectBrugge" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="1" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnBrugge" Click="btnBrugge_Click" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="2" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Napoli_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Napoli" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectNapoli" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="2" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnNapoli" Click="btnNapoli_Click" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="3" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Schalke04_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Schalke 04" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectSchalke" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="3" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnSchalke" Click="btnSchalke_Click" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="4" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ValenciaCF_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Valence CF" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectValence" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="4" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnValence" Click="btnValence_Click" Grid.Column="4" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="5" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Everton_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Everton" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectEverton" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="5" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnEverton" Click="btnEverton_Click" Grid.Column="5" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="6" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/BSCYoungBoys_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="BSC Young" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectBSC" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="6" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnBSC" Click="btnBSC_Click" Grid.Column="6" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="7" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Sevilla_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Sevilla" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectSevilla" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="7" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnSevilla" Click="btnSevilla_Click" Grid.Column="7" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="8" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/CelticsGlasgow_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Celtics" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectCeltics" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="8" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnCeltics" Click="btnCeltics_Click" Grid.Column="8" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="9" Grid.Row="2">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/DinamoZagreb_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Dinamo" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectDinamo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="9" Grid.Row="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnDinamo" Click="btnDinamo_Click" Grid.Column="9" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="0" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/SpartakMoscow_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Spartak" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectSpartak" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="0" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnSpartak" Click="btnSpartak_Click" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="1" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Fenerbahce_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Fenerbahce" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectFener" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="1" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnFener" Click="btnFener_Click" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="2" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Gent_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Gent" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectGent" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="2" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnGent" Click="btnGent_Click" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="3" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Salzburg_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Salzbourg" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectSalzbourg" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="3" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnSalzbourg" Click="btnSalzbourg_Click" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="4" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Benfica_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Benfica" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectBenfica" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="4" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnBenfica" Click="btnBenfica_Click" Grid.Column="4" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="5" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Sporting_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Sporting CP" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectSporting" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="5" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnSporting" Click="btnSporting_Click" Grid.Column="5" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="6" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/ShakhtarDonetsk_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Shakhtar" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectShakhtar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="6" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnShakhtar" Click="btnShakhtar_Click" Grid.Column="6" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="7" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/LokomotivMoscow_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Lokomotiv" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectLokomotiv" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="7" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnLokomotiv" Click="btnLokomotiv_Click" Grid.Column="7" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="8" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/Lazio_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="Lazio Rome" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectLazio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="8" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Name="btnLazio" Click="btnLazio_Click" Grid.Column="8" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
             <Grid Grid.Column="9" Grid.Row="3">
-
+                <Rectangle HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="#FF7F8BE0" Stroke="#FF2A2A54"/>
+                <Grid Height="107" Width="101">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="87*"/>
+                        <RowDefinition Height="10*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle Grid.Row="1" Fill="Black"/>
+                    <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="pictures/OM_logo.png" Width="80" Height="80"/>
+                    <TextBlock Text="OM" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="2" Foreground="White" Margin="18,0,17,6.2" FontFamily="Impact"/>
+                </Grid>
+                <Rectangle Name="rectOM" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Fill="Black" Opacity="0" />
             </Grid>
-            <Button Grid.Column="9" Grid.Row="3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Grid Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2">
+            <Button Name="btnOM" Click="btnOM_Click" Grid.Column="9" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="101" Background="{x:Null}" BorderBrush="{x:Null}"/>
 
-            </Grid>
-            <Button Grid.Column="4" Grid.Row="4" Grid.ColumnSpan="2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="708,399,0,-0.4" VerticalAlignment="Top" Width="82" Height="51" Click="Button_Click"/>
+        <Grid Height="200" Width="1052" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox Grid.ColumnSpan="2" Background="#FF7F8BE0" />
+            <StackPanel Grid.Column="2">
+                <TextBlock HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="Voici la liste des équipes que vous avez sélectionné pour participer au tournoi, appuyez sur 'Continuer' pour lancer la simulation.. " VerticalAlignment="Top" FontFamily="Global User Interface" Foreground="White" FontSize="18"/>
+                <Button Name="btnContinuer" Click="btnContinuer_Click" Content="Continuer" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
+            </StackPanel>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Name="Number" Grid.ColumnSpan="2" Height="128" Width="448"/>
+        </Grid>
     </Grid>
 </Page>

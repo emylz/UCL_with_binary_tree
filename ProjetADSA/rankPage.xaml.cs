@@ -20,13 +20,41 @@ namespace ProjetADSA
     /// </summary>
     public partial class rankPage : Page
     {
+        Tournament t;
         public rankPage()
         {
             InitializeComponent();
         }
 
+        public rankPage(Tournament t)
+        {
+            InitializeComponent();
+
+            this.t = t;
+
+            pool1.Content = t.Array[0].ToString();
+            pool2.Content = t.Array[1].ToString();
+            pool3.Content = t.Array[2].ToString();
+            pool4.Content = t.Array[3].ToString();
+            pool5.Content = t.Array[4].ToString();
+            pool6.Content = t.Array[5].ToString();
+            pool7.Content = t.Array[6].ToString();
+            pool8.Content = t.Array[7].ToString();
+        }
+
         private void goButton_Click(object sender, RoutedEventArgs e)
         {
+            t.playPool();
+
+            pool1.Content = t.Array[0].ToString();
+            pool2.Content = t.Array[1].ToString();
+            pool3.Content = t.Array[2].ToString();
+            pool4.Content = t.Array[3].ToString();
+            pool5.Content = t.Array[4].ToString();
+            pool6.Content = t.Array[5].ToString();
+            pool7.Content = t.Array[6].ToString();
+            pool8.Content = t.Array[7].ToString();
+
             okButton.Visibility = Visibility.Visible;
             goButton.Visibility = Visibility.Hidden;
         }

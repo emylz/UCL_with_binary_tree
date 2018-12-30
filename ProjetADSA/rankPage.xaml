@@ -9,50 +9,23 @@
       Title="rankPage">
 
     <Grid Background="#FFE2CACA">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="50"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 1" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 2" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 3" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 4" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 5" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100" />
-        </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 6" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 7" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="Poule 8" HorizontalContentAlignment="Center"/>
-            <ListBox Height="100"/>
-        </StackPanel>
-        <Button Content="OK" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="50" Height="40" Visibility="Hidden" Name="okButton" Click="okButton_Click"/>
-        <Button Content="Play the matchs" Grid.Column="2" HorizontalAlignment="Left" Margin="40,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="150" Height="40" Name="goButton" Click="goButton_Click"/>
+        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="400" Margin="0,28,0,0" Name="pool1"/>
+        <Label Name="pool2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="89" Width="400" Margin="405,36,-5,0"/>
+        <Label Name="pool3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Width="390" Margin="0,130,0,0"/>
+        <Label Name="pool4" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.576,-0.093" Height="80" Width="400" Margin="405,130,-5,0"/>
+        <Label Name="pool5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Width="400" Margin="0,245,0,0"/>
+        <Label Name="pool6" HorizontalAlignment="Left" Margin="400,239,0,0" VerticalAlignment="Top" Height="81" Width="400"/>
+        <Label Name="pool7" HorizontalAlignment="Left" Margin="0,346,0,0" VerticalAlignment="Top" Height="76" Width="400"/>
+        <Label Name="pool8" HorizontalAlignment="Left" Margin="400,346,0,0" VerticalAlignment="Top" Height="76" Width="400"/>
+        <Label Content="Pool 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black"/>
+        <Label Content="Pool 2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black" Margin="405,3,-5,0"/>
+        <Label Content="Pool 3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black" Margin="0,102,0,0"/>
+        <Label Content="Pool 4" VerticalAlignment="Top" Height="28" FontWeight="Black" Margin="405,102,-405,0"/>
+        <Label Content="Pool 5" HorizontalAlignment="Left" Margin="0,215,0,0" VerticalAlignment="Top" Height="30" Width="400" FontWeight="Black"/>
+        <Label Content="Pool 6" HorizontalAlignment="Left" Margin="400,215,0,0" VerticalAlignment="Top" Height="33" Width="400" FontWeight="Black"/>
+        <Label Content="Pool 7" Margin="0,318,0,0" VerticalAlignment="Top" Height="28" FontWeight="Black"/>
+        <Label Content="Pool 8" HorizontalAlignment="Left" Margin="400,325,0,0" VerticalAlignment="Top" Height="31" Width="400" FontWeight="Black" />
+        <Button Name="goButton" Content="Play" HorizontalAlignment="Left" Margin="248,412,0,18.6" Width="75" Click="goButton_Click"/>
+        <Button Name="okButton" Content="Ok" HorizontalAlignment="Left" Margin="427,427,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="okButton_Click"/>
     </Grid>
 </Page>

@@ -20,14 +20,12 @@ namespace ProjetADSA
     /// </summary>
     public partial class MainWindow : Window
     {
-        Tournament t;
 
         public MainWindow()
         {
             InitializeComponent();
-            t = new Tournament();
 
-            string a = "";
+            /*string a = "";
 
             foreach (Team p in t.Total_team)
             {
@@ -36,7 +34,7 @@ namespace ProjetADSA
 
             test.Content = a;
 
-            /* string a = "";
+             string a = "";
 
              foreach(Pool p in t.Array)
              {

@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace ProjetADSA
 {
-    class Tournament
+    public class Tournament
     {
         List<Pool> array = new List<Pool>(8);
 
@@ -19,63 +19,65 @@ namespace ProjetADSA
 
         List<Team> total_team = new List<Team>();
 
-        DirectElimination directE; 
+        DirectElimination directE;
 
         public Tournament()
         {
             string json = File.ReadAllText("Equipe_Tournoi.json");
             json.Replace('"', '\'');
-            this.total_team = JsonConvert.DeserializeObject<List<Team>>(json);
+            List<Team> temp = new List<Team>();
+            temp = JsonConvert.DeserializeObject<List<Team>>(json);
 
+            int i = 0; 
 
-            int i;
-            total_team.Sort(Team.CoefficientSort);
-            for(i=0; i < 8; i++)
+            Random r = new Random();
+            while (i < 32)
+            {
+                int rand = r.Next(temp.Count - 1);
+                this.total_team.Add(temp[rand]);
+                temp.RemoveAt(rand);
+                i++;
+            }
+
+            build();
+        }
+
+        public Tournament(List<Team> teams)
+        {
+            this.total_team = teams;
+            build();
+        }
+        
+        public void build()
+        {
+            int i = 0;
+
+            this.total_team.Sort(Team.CoefficientSort);
+            for (i = 0; i < 8; i++)
             {
                 this.pot1.Add(total_team[i]);
             }
 
-            for (i=8; i < 16; i++)
+            for (i = 8; i < 16; i++)
             {
                 this.pot2.Add(total_team[i]);
             }
 
-            for (i=16; i < 24; i++)
+            for (i = 16; i < 24; i++)
             {
                 this.pot3.Add(total_team[i]);
             }
 
-            for (i=24; i < 32; i++)
+            for (i = 24; i < 32; i++)
             {
                 this.pot4.Add(total_team[i]);
             }
 
             draw();
 
-
         }
 
-        public List<Team> Total_team
-        {
-            get
-            {
-                return total_team;
-            }
-            set
-            {
-                this.total_team = value;
-            }
-        }
-
-        public List<Pool> Array { get => array; }
-
-        public DirectElimination DirectE
-        {
-            get
-            {
-                return this.directE;
-            }
-        }
+        internal List<Pool> Array { get => array; set => array = value; }
 
         public void draw()
         {
@@ -138,19 +140,18 @@ namespace ProjetADSA
                 pot4.RemoveAt(take);
 
                 Pool p = new Pool(a, b, c, d);
-                this.Array.Add(p);
+                this.array.Add(p);
 
                 i++;
             }
 
-            playPool();
         }
 
         public void getHead()
         {
             List<Team> head = new List<Team>(8);
             List<Team> noHead = new List<Team>(8);
-            foreach (Pool p in Array)
+            foreach (Pool p in array)
             {
                 head.Add(p.Order[1]);
                 noHead.Add(p.Order[2]);
@@ -162,10 +163,10 @@ namespace ProjetADSA
 
         public void playPool()
         {
-            for(int i = 0; i < this.Array.Count; i++)
+            for (int i = 0; i < this.array.Count; i++)
             {
-                this.Array[i].playPool();
-                this.Array[i].Order.Sort();
+                this.array[i].playPool();
+                this.array[i].Order.Sort();
             }
         }
 
