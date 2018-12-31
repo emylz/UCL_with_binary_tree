@@ -46,8 +46,6 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/galatasaray_logo_1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/gent_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/gent_logo_1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/hoffenheim_logo.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/hoffenheim_logo_1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/intermilan_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/intermilan_logo_1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/juventus_logo.png")]
@@ -72,6 +70,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/psg_logo_1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/psv_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/psv_logo_1.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/realmadrid_logo%20-%20copie.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/realmadrid_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/salzburg_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/salzburg_logo_1.png")]
@@ -87,8 +86,8 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/sporting_logo_1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/tottenham_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/tottenham_logo_1.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/trophy.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/valenciacf_logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/valenciacf_logo_1.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/ztrophy.png")]
 
 

@@ -19,14 +19,14 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="79" Width="400" Margin="0,33,0,0" Name="pool1"/>
-        <Label Name="pool2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="79" Width="400" Margin="0,33,0,0"/>
-        <Label Name="pool3" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="80" Grid.RowSpan="2" Width="390" Margin="0,33,0,0"/>
-        <Label Name="pool4" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="4.576,-0.093" Height="80" Width="400" Grid.Column="1" Grid.RowSpan="2" Margin="0,33,0,0"/>
-        <Label Name="pool5" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="75" Width="400" Margin="0,35.2,0,0"/>
-        <Label Name="pool6" HorizontalAlignment="Left" Margin="0,31.2,0,0" Grid.Row="2" VerticalAlignment="Top" Height="81" Width="400" Grid.Column="1"/>
-        <Label Name="pool7" HorizontalAlignment="Left" Margin="0,36.4,0,-0.4" Grid.Row="3" VerticalAlignment="Top" Height="76" Width="400"/>
-        <Label Name="pool8" HorizontalAlignment="Left" Margin="0,36.4,0,-0.4" Grid.Row="3" VerticalAlignment="Top" Height="76" Width="400" Grid.Column="1"/>
+        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="79" Width="400" Margin="0,33,0,0" Name="pool1" Background="#FF7F8BE0"/>
+        <Label Name="pool2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="79" Width="400" Margin="0,33,0,0" Background="#FF7F8BE0"/>
+        <Label Name="pool3" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="80" Grid.RowSpan="2" Width="400" Margin="0,33,0,0" Background="#FF7F8BE0"/>
+        <Label Name="pool4" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="4.576,-0.093" Height="80" Background="#FF7F8BE0" Width="400" Grid.Column="1" Grid.RowSpan="2" Margin="0,33,0,0"/>
+        <Label Name="pool5" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="75" Width="400" Margin="0,35.2,0,0" Background="#FF7F8BE0"/>
+        <Label Name="pool6" HorizontalAlignment="Left" Margin="0,31.2,0,0" Grid.Row="2" VerticalAlignment="Top" Height="81" Width="400" Grid.Column="1" Background="#FF7F8BE0"/>
+        <Label Name="pool7" HorizontalAlignment="Left" Margin="0,36.4,0,-0.4" Grid.Row="3" VerticalAlignment="Top" Height="76" Width="400" Background="#FF7F8BE0"/>
+        <Label Name="pool8" HorizontalAlignment="Left" Margin="0,36.4,0,-0.4" Grid.Row="3" VerticalAlignment="Top" Height="76" Width="400" Grid.Column="1" Background="#FF7F8BE0"/>
         <Label Content="Pool 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black"/>
         <Label Content="Pool 2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black"/>
         <Label Content="Pool 3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" Grid.Row="1" FontWeight="Black"/>
@@ -36,6 +36,6 @@
         <Label Content="Pool 7" Margin="0,3.2,0,0" VerticalAlignment="Top" Height="28" Grid.Row="3" FontWeight="Black"/>
         <Label Content="Pool 8" Grid.Column="1" HorizontalAlignment="Left" Margin="0,0.2,0,0" VerticalAlignment="Top" Height="31" Width="400" Grid.Row="3" FontWeight="Black" />
 
-        <Button Name="goButton" Content="Play" HorizontalAlignment="Left" Margin="317,77.2,0,0.6" Width="75" Click="goButton_Click" Grid.Row="3" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
-        </Grid>
+        <Button Name="goButton" Content="Play" HorizontalAlignment="Left" Margin="319,87.2,0,-0.4" Width="81" Click="goButton_Click" Grid.Row="3" RenderTransformOrigin="1.219,0.913" Grid.Column="1" Height="Auto"/>
+    </Grid>
 </Page>

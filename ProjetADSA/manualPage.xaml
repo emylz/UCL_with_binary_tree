@@ -642,8 +642,8 @@
             </Grid.ColumnDefinitions>
             <ListBox Grid.ColumnSpan="2" Background="#FF7F8BE0" />
             <StackPanel Grid.Column="2">
-                <TextBlock HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="Voici la liste des équipes que vous avez sélectionné pour participer au tournoi, appuyez sur 'Continuer' pour lancer la simulation.. " VerticalAlignment="Top" FontFamily="Global User Interface" Foreground="White" FontSize="18"/>
-                <Button Name="btnContinuer" Click="btnContinuer_Click" Content="Continuer" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
+                <TextBlock HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="You can choose 32 teams to put into the UCL." VerticalAlignment="Top" FontFamily="Global User Interface" Foreground="White" FontSize="18"/>
+                <Button Name="btnContinuer" Click="btnContinuer_Click" Content="Go" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
             </StackPanel>
             <Label Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Name="Number" Grid.ColumnSpan="2" Height="128" Width="448"/>
         </Grid>

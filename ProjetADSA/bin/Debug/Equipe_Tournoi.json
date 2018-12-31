@@ -276,7 +276,7 @@
 
   },
     {
-    "name":"Fernerbahce",
+    "name":"Fenerbahce",
     "attack": 74,
     "defense" : 72,
     "teamCohesion" : 73,
@@ -303,7 +303,7 @@
 
   },
     {
-    "name":"Benifica",
+    "name":"Benfica",
     "attack": 76,
     "defense" : 75,
     "teamCohesion" : 83,
@@ -345,15 +345,6 @@
     "teamCohesion" : 80,
 	"coefficient" :  37 ,
     "country" : "Italy"	
-
-  },
-    {
-    "name":"Hoffenheim",
-    "attack": 77,
-    "defense" : 76,
-    "teamCohesion" : 77,
-	"coefficient" :  14 ,
-    "country" : "Germany"	
 
   },
     {

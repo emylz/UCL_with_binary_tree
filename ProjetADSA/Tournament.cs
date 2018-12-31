@@ -78,6 +78,7 @@ namespace ProjetADSA
         }
 
         internal List<Pool> Array { get => array; set => array = value; }
+        internal DirectElimination DirectE { get => directE; set => directE = value; }
 
         public void draw()
         {
@@ -153,12 +154,12 @@ namespace ProjetADSA
             List<Team> noHead = new List<Team>(8);
             foreach (Pool p in array)
             {
-                head.Add(p.Order[1]);
-                noHead.Add(p.Order[2]);
+                head.Add(p.Order[0]);
+                noHead.Add(p.Order[1]);
             }
 
             BinaryTree b = new BinaryTree();
-            this.directE = new DirectElimination(b, head, noHead);
+            this.DirectE = new DirectElimination(b, head, noHead);
         }
 
         public void playPool()

@@ -8,16 +8,16 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="rankPage">
 
-    <Grid Background="#FFE2CACA">
-        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="400" Margin="0,28,0,0" Name="pool1"/>
-        <Label Name="pool2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="89" Width="400" Margin="405,36,-5,0"/>
-        <Label Name="pool3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Width="390" Margin="0,130,0,0"/>
-        <Label Name="pool4" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.576,-0.093" Height="80" Width="400" Margin="405,130,-5,0"/>
-        <Label Name="pool5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Width="400" Margin="0,245,0,0"/>
-        <Label Name="pool6" HorizontalAlignment="Left" Margin="400,239,0,0" VerticalAlignment="Top" Height="81" Width="400"/>
-        <Label Name="pool7" HorizontalAlignment="Left" Margin="0,346,0,0" VerticalAlignment="Top" Height="76" Width="400"/>
-        <Label Name="pool8" HorizontalAlignment="Left" Margin="400,346,0,0" VerticalAlignment="Top" Height="76" Width="400"/>
-        <Label Content="Pool 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black"/>
+    <Grid Background="#FF333471">
+        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="405" Margin="0,28,0,0" Name="pool1" Background="#FF7F8BE0"/>
+        <Label Name="pool2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="74" Width="400" Margin="405,28,-5,0" Background="#FF7F8BE0"/>
+        <Label Name="pool3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="80" Width="405" Margin="0,130,0,0" Background="#FF7F8BE0"/>
+        <Label Name="pool4" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.576,-0.093" Height="80" Width="400" Margin="405,130,-5,0" Background="#FF7F8BE0"/>
+        <Label Name="pool5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="81" Width="400" Margin="0,239,0,0" Background="#FF7F8BE0"/>
+        <Label Name="pool6" HorizontalAlignment="Left" Margin="400,239,0,0" VerticalAlignment="Top" Height="81" Width="400" Background="#FF7F8BE0"/>
+        <Label Name="pool7" HorizontalAlignment="Left" Margin="0,346,0,0" VerticalAlignment="Top" Height="76" Width="400" Background="#FF7F8BE0"/>
+        <Label Name="pool8" HorizontalAlignment="Left" Margin="400,346,0,0" VerticalAlignment="Top" Height="76" Width="400" Background="#FF7F8BE0"/>
+        <Label Content="Pool 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black" />
         <Label Content="Pool 2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black" Margin="405,3,-5,0"/>
         <Label Content="Pool 3" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="400" FontWeight="Black" Margin="0,102,0,0"/>
         <Label Content="Pool 4" VerticalAlignment="Top" Height="28" FontWeight="Black" Margin="405,102,-405,0"/>

@@ -530,7 +530,7 @@ namespace ProjetADSA
             {
                 rectFener.Opacity = 0.7;
                 btnFener.IsEnabled = false;
-                tmp.Add(search("Fernerbahce"));
+                tmp.Add(search("Fenerbahce"));
                 label();
             }
             else
@@ -575,7 +575,7 @@ namespace ProjetADSA
             {
                 rectBenfica.Opacity = 0.7;
                 btnBenfica.IsEnabled = false;
-                tmp.Add(search("Benifica"));
+                tmp.Add(search("Benfica"));
                 label();
             }
             else
@@ -668,7 +668,7 @@ namespace ProjetADSA
             else
             {
                 this.t = new Tournament(this.tmp);
-                this.NavigationService.Navigate(new rankPage());
+                this.NavigationService.Navigate(new rankPage(t));
             }
         }
 

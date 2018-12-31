@@ -61,7 +61,7 @@ namespace ProjetADSA
 
         private void okButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.NavigationService.Navigate(new WallChart(this.t));
         }
     }
 }

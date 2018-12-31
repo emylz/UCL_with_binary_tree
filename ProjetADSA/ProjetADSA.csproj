@@ -80,6 +80,9 @@
     </Compile>
     <Compile Include="Team.cs" />
     <Compile Include="Tournament.cs" />
+    <Compile Include="WallChart.xaml.cs">
+      <DependentUpon>WallChart.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -101,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="rankPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WallChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,8 +179,6 @@
     <Resource Include="pictures\Galatasaray_logo_1.png" />
     <Resource Include="pictures\Gent_logo.png" />
     <Resource Include="pictures\Gent_logo_1.png" />
-    <Resource Include="pictures\Hoffenheim_logo.png" />
-    <Resource Include="pictures\Hoffenheim_logo_1.png" />
     <Resource Include="pictures\InterMilan_logo.png" />
     <Resource Include="pictures\InterMilan_logo_1.png" />
     <Resource Include="pictures\Juventus_logo.png" />
@@ -198,6 +203,7 @@
     <Resource Include="pictures\PSG_logo_1.png" />
     <Resource Include="pictures\PSV_logo.png" />
     <Resource Include="pictures\PSV_logo_1.png" />
+    <Resource Include="pictures\RealMadrid_logo - Copie.png" />
     <Resource Include="pictures\RealMadrid_logo.png" />
     <Resource Include="pictures\Salzburg_logo.png" />
     <Resource Include="pictures\Salzburg_logo_1.png" />
@@ -213,9 +219,11 @@
     <Resource Include="pictures\Sporting_logo_1.png" />
     <Resource Include="pictures\Tottenham_logo.png" />
     <Resource Include="pictures\Tottenham_logo_1.png" />
-    <Resource Include="pictures\Trophy.png" />
     <Resource Include="pictures\ValenciaCF_logo.png" />
     <Resource Include="pictures\ValenciaCF_logo_1.png" />
+    <Resource Include="pictures\ZTrophy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
