@@ -4,14 +4,14 @@
 
 # Presentation
 
-This project is create by YALAZ Emin, SCHOESER Matthieu and SY Xavier, students from ESILV.
+This project has been created by YALAZ Emin, SCHOESER Matthieu and SY Xavier, students from ESILV.
 
 
 Our project is to develop a football match game that run automatically. We were inspired of
 Champion's League team to create the algorithm. You have the choice between select each teams 
 among 40 or to randomly choose the teams.
 
-The system works like Champion's league system. There is 8 pool with 4 teams in each pool then
+The system works like Champion's league system. There are 8 pool with 4 teams in each pool then
 we pass to the eight of final next the quarter final, the semi final and the final.
 
 We wrote a JSON File to stock the 40 teams with 5 parameters.Their name, their attack, defense,
@@ -37,7 +37,7 @@ first hat and so on.
 Because we're mimicing the Champion's League, at the end of each match during the "pool phase" we're
 assigning points, goals etc to the different teams.
 
-Now, we'll proceed to the explaination of the "final phase". First, we're creating a binary tree with 
+Now, we'll proceed to the explanation of the "final phase". First, we're creating a binary tree with 
 a height of 4. Each node of this tree correponds to a match. The 8 leaves of our tree are filled with 
 matches. Then, the winners of each match are "climbing" the tree till the end (the root of our binary 
 tree) where we can finally define an "ultimate" winner (the winner of the final match).
