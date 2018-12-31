@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ProjetADSA"
       mc:Ignorable="d" 
-      d:DesignHeight="1450" d:DesignWidth="1800"
+      d:DesignHeight="650" d:DesignWidth="1052"
       Title="manualPage">
 
     <Grid Background="#FF333471">
@@ -640,12 +640,28 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <ListBox Grid.ColumnSpan="2" Background="#FF7F8BE0" />
+            <Rectangle Grid.ColumnSpan="2" Fill="#FF7F8BE0" />
+            <Grid Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="You have selected" VerticalAlignment="Center" Margin="15" FontFamily="Global User Interface" FontSize="20" Foreground="White"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                    <Label Content="" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Name="Number" FontFamily="Global User Interface" FontSize="28" Foreground="White" FontWeight="Bold"/>
+                    <TextBlock Text="teams" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="15" FontFamily="Global User Interface" FontSize="20" Foreground="White"/>
+                </StackPanel>
+            </Grid>
             <StackPanel Grid.Column="2">
-                <TextBlock HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="You can choose 32 teams to put into the UCL." VerticalAlignment="Top" FontFamily="Global User Interface" Foreground="White" FontSize="18"/>
-                <Button Name="btnContinuer" Click="btnContinuer_Click" Content="Go" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
+                <TextBlock HorizontalAlignment="Left" Margin="20" TextWrapping="Wrap" Text="Choose 32 teams to add to the UCL roaster, once it's done press 'Continue' to start the tournament.. " VerticalAlignment="Top" FontFamily="Global User Interface" Foreground="White" FontSize="18"/>
+                <Button Name="btnContinuer" Click="btnContinuer_Click" Content="Continue" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40"/>
             </StackPanel>
-            <Label Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Name="Number" Grid.ColumnSpan="2" Height="128" Width="448"/>
         </Grid>
     </Grid>
 </Page>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjetADSA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="648.135" Width="1056.903">
+        Title="ADSA" Height="660" Width="1067" WindowStartupLocation="CenterScreen">
 
 
     <Grid Background="#FF333471">
@@ -19,12 +19,13 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Matthieu SCHOESER" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
-        <Label Content="Xavier SY" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center"/>
-        <Label Content="Emin YALAZ" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center"/>
-        <Label Content="Projet ADSA" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24"/>
-        <Button Grid.ColumnSpan="2" Content="Manual" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="97" Height="30" Name="manualButton" Click="manualButton_Click" Margin="290.6,88.2,312.4,87.4"/>
-        <Button Grid.ColumnSpan="2" Content="Random" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="104" Height="30" Name="randomButton" Click="randomButton_Click" Margin="313,88.2,283.8,87.4"/>
+        <Label Content="Matthieu SCHOESER" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Bottom" FontFamily="Global User Interface" FontSize="24" Foreground="#DDFFFFFF"/>
+        <Label Content="Xavier SY" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Bottom" FontFamily="Global User Interface" FontSize="24" Foreground="#DDFFFFFF"/>
+        <Label Content="Emin YALAZ" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Bottom" FontFamily="Global User Interface" FontSize="24" Foreground="#DDFFFFFF"/>
+        <Label Content="Projet ADSA" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="48" FontFamily="Global User Interface" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        <Label Content="Champion's League" Grid.ColumnSpan="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" FontFamily="Global User Interface" Foreground="#DDFFFFFF"/>
+        <Button Grid.ColumnSpan="2" Content="Manual" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="150" Height="50" Name="manualButton" Click="manualButton_Click"/>
+        <Button Grid.ColumnSpan="2" Content="Random" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="150" Height="50" Name="randomButton" Click="randomButton_Click"/>
 
         <Frame HorizontalAlignment="Left" Height="618" VerticalAlignment="Top" Width="1050" Grid.ColumnSpan="3" Grid.RowSpan="3" x:Name="main"/>
     </Grid>
